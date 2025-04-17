@@ -24,4 +24,12 @@ export default defineConfig({
       input,
     },
   },
+  css: {
+    postcss: {
+      plugins: [
+        require('tailwindcss'),
+        require('autoprefixer'),
+      ],
+    },
+  },
 });
