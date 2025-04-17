@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Join Leland AI Club</title>
+  <link rel="stylesheet" href="/src/styles.css"/>
+</head>
+<body class="bg-gray-900 text-white flex flex-col min-h-screen">
+  <header class="p-6 flex justify-between items-center">
+    <a href="/" class="text-2xl font-bold hover:underline">Leland AI</a>
+    <nav class="space-x-4">
+      <a href="/" class="hover:underline">Home</a>
+      <a href="/join-us.html" class="underline">Join Us</a>
+      <a href="/about-us.html" class="hover:underline">About Us</a>
+      <a href="/our-slides.html" class="hover:underline">Our Slides</a>
+    </nav>
+  </header>
+
+  <main class="flex-grow px-6 py-12">
+    <h2 class="text-4xl font-bold text-center mb-8">Join Leland AI Club</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div>
+        <h3 class="text-2xl font-semibold">Google Form</h3>
+        <p class="my-2">Fill out our form to sign up:</p>
+        <a href="https://forms.gle/QeMrorcAxuMC1c8QA" class="inline-block px-6 py-2 bg-blue-600 rounded-full hover:bg-blue-700">Google Form</a>
+      </div>
+      <div>
+        <h3 class="text-2xl font-semibold">Discord</h3>
+        <p class="my-2">Get announcements & meeting links:</p>
+        <a href="https://discord.gg/6AtAmJdbtA" class="inline-block px-6 py-2 bg-indigo-600 rounded-full hover:bg-indigo-700">Discord</a>
+      </div>
+      <div>
+        <h3 class="text-2xl font-semibold">Instagram</h3>
+        <p class="my-2">Follow our club’s updates:</p>
+        <a href="https://instagram.com/lelandaiclub" class="inline-block px-6 py-2 bg-pink-600 rounded-full hover:bg-pink-700">Instagram</a>
+      </div>
+    </div>
+    <div class="mt-12 flex flex-row justify-center items-center gap-12">
+      <div><span id="presentations-count" class="text-3xl font-bold">20+</span><p>Presentations</p></div>
+      <div><span id="members-count" class="text-3xl font-bold">25+</span><p>Members</p></div>
+    </div>
+  </main>
+
+  <footer class="p-4 text-center">
+    &copy; 2025 Leland AI
+  </footer>
+  <script type="module">
+    import { setupAnimatedCounters } from '/src/counter-animate.js';
+    setupAnimatedCounters();
+  </script>
+</body>
+</html>
